@@ -7,31 +7,55 @@
 //
 
 #import "AKTextViewController.h"
+#import "AKTextView.h"
+#import "AKSpeechMgr.h"
+#import "AKSpeechModel.h"
+#import "PureLayout.h"
 
 @interface AKTextViewController ()
-
+@property (nonatomic, strong) AKTextView *textView;
 @end
 
 @implementation AKTextViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self comInit];
+    [self styleInit];
+}
+
+- (void)comInit {
+    _textView = [[AKTextView alloc] initWithFrame:CGRectMake(0, 100, CGRectGetWidth(self.view.bounds), 400)];
+    [self.view addSubview:_textView];
+    
+    UIButton *speechBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [speechBtn setTitle:@"读取文字" forState:UIControlStateNormal];
+    [speechBtn addTarget:self action:@selector(onSpeechClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:speechBtn];
+    speechBtn.frame = CGRectMake(0, 500, 100, 30);
+
+}
+
+- (void)styleInit {
+    self.view.backgroundColor = [UIColor whiteColor];
+    _textView.backgroundColor = [UIColor yellowColor];
+}
+
+
+- (void)onSpeechClick {
+    AKSpeechModel *item = [AKSpeechModel new];
+    item.contentText = _textView.text;
+    item.language = @"zh-CN";
+    item.pitchMultiPlier = 1.0f;
+    [[AKSpeechMgr shared] speechWithItem:item complete:^(AVSpeechSynthesizer *synthesizer, AVSpeechUtterance *utterance, NSRange characterRange, AKASpeechDelegateType type) {
+        NSLog(@"type :%ld , speech noew content : %@",type,[utterance.speechString substringWithRange:characterRange]);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

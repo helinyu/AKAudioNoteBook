@@ -8,6 +8,7 @@
 
 #import "AKMixViewController.h"
 #import "AKMainCategory.h"
+#import "AKTextViewController.h"
 
 @interface AKMixViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -29,7 +30,7 @@ static NSString *const reuseMixTableViewCellIdentifier = @"reuse.mix.table.cell.
 }
 
 - (void)comInit {
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds)) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds)-64) style:UITableViewStylePlain];
     [self.view addSubview:_tableView];
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:reuseMixTableViewCellIdentifier];
     _tableView.dataSource  = self;
@@ -48,6 +49,7 @@ static NSString *const reuseMixTableViewCellIdentifier = @"reuse.mix.table.cell.
 
 - (void)textInit {
     self.title = @"文件(夹)混合";
+    _dataSources = @[@"创建文件"];
 }
 
 #pragma mark -- custom  click methods
@@ -64,16 +66,20 @@ static NSString *const reuseMixTableViewCellIdentifier = @"reuse.mix.table.cell.
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseMixTableViewCellIdentifier forIndexPath:indexPath];
-    AKMainCategory *category = _dataSources[indexPath.row];
-    //    cell.selectionStyle = UITableViewCellStyleDefault;
-    cell.textLabel.text = category.title;
-    cell.detailTextLabel.text = category.description;
-    cell.image = category.firstImg;
+    cell.textLabel.text = _dataSources[indexPath.row];
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 80.f;
+}
+
+#pragma mark --table delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        [self.navigationController pushViewController:[AKTextViewController new] animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
