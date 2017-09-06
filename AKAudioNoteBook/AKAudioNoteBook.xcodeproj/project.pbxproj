@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4145AB0F1F6058C5004AADD9 /* AKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4145AB0E1F6058C5004AADD9 /* AKTextView.m */; };
+		4145AB121F6058E8004AADD9 /* AKTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4145AB111F6058E8004AADD9 /* AKTextViewController.m */; };
+		4145AB161F6059AD004AADD9 /* AKMixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4145AB151F6059AD004AADD9 /* AKMixViewController.m */; };
 		415DDE721F6045FC00F43738 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 415DDE711F6045FC00F43738 /* AppDelegate.m */; };
 		415DDE751F6045FC00F43738 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415DDE741F6045FC00F43738 /* ViewController.m */; };
 		415DDE781F6045FC00F43738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415DDE761F6045FC00F43738 /* Main.storyboard */; };
@@ -16,6 +19,10 @@
 		415DDE831F6045FC00F43738 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 415DDE821F6045FC00F43738 /* main.m */; };
 		415DDE8D1F6045FC00F43738 /* AKAudioNoteBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 415DDE8C1F6045FC00F43738 /* AKAudioNoteBookTests.m */; };
 		415DDE981F6045FC00F43738 /* AKAudioNoteBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 415DDE971F6045FC00F43738 /* AKAudioNoteBookUITests.m */; };
+		415DDEA81F604AC800F43738 /* AKMainCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 415DDEA71F604AC700F43738 /* AKMainCategory.m */; };
+		6F5AD7595735E6DB59A8D3D4 /* libPods-AKAudioNoteBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1989D089CEBEA530EFF6DDE /* libPods-AKAudioNoteBook.a */; };
+		E23EC8309B7748A02454602E /* libPods-AKAudioNoteBookTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 051038B56CA0AA3444AF68EE /* libPods-AKAudioNoteBookTests.a */; };
+		F93C4944137F9E48F27CB9D0 /* libPods-AKAudioNoteBookUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 467093FB848837A40BE2D99D /* libPods-AKAudioNoteBookUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		051038B56CA0AA3444AF68EE /* libPods-AKAudioNoteBookTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AKAudioNoteBookTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15E510BD1A1C98D2AE898037 /* Pods-AKAudioNoteBookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKAudioNoteBookUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AKAudioNoteBookUITests/Pods-AKAudioNoteBookUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4145AB0D1F6058C5004AADD9 /* AKTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKTextView.h; sourceTree = "<group>"; };
+		4145AB0E1F6058C5004AADD9 /* AKTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKTextView.m; sourceTree = "<group>"; };
+		4145AB101F6058E8004AADD9 /* AKTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKTextViewController.h; sourceTree = "<group>"; };
+		4145AB111F6058E8004AADD9 /* AKTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKTextViewController.m; sourceTree = "<group>"; };
+		4145AB141F6059AD004AADD9 /* AKMixViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKMixViewController.h; sourceTree = "<group>"; };
+		4145AB151F6059AD004AADD9 /* AKMixViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKMixViewController.m; sourceTree = "<group>"; };
 		415DDE6D1F6045FC00F43738 /* AKAudioNoteBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKAudioNoteBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		415DDE701F6045FC00F43738 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		415DDE711F6045FC00F43738 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +68,16 @@
 		415DDE931F6045FC00F43738 /* AKAudioNoteBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKAudioNoteBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		415DDE971F6045FC00F43738 /* AKAudioNoteBookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKAudioNoteBookUITests.m; sourceTree = "<group>"; };
 		415DDE991F6045FC00F43738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415DDEA61F604AC700F43738 /* AKMainCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKMainCategory.h; sourceTree = "<group>"; };
+		415DDEA71F604AC700F43738 /* AKMainCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKMainCategory.m; sourceTree = "<group>"; };
+		415DDEAB1F60513E00F43738 /* AKBaseDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKBaseDefine.h; sourceTree = "<group>"; };
+		437D5819F666D63682B0F602 /* Pods-AKAudioNoteBookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKAudioNoteBookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AKAudioNoteBookTests/Pods-AKAudioNoteBookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		467093FB848837A40BE2D99D /* libPods-AKAudioNoteBookUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AKAudioNoteBookUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3C9D4A777F54D2A3251957 /* Pods-AKAudioNoteBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKAudioNoteBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-AKAudioNoteBook/Pods-AKAudioNoteBook.release.xcconfig"; sourceTree = "<group>"; };
+		66D5B69FDEAAD1DF5F9F2D11 /* Pods-AKAudioNoteBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKAudioNoteBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AKAudioNoteBook/Pods-AKAudioNoteBook.debug.xcconfig"; sourceTree = "<group>"; };
+		7118FFC88055BAD1E429036A /* Pods-AKAudioNoteBookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKAudioNoteBookUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AKAudioNoteBookUITests/Pods-AKAudioNoteBookUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E1989D089CEBEA530EFF6DDE /* libPods-AKAudioNoteBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AKAudioNoteBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E378CB7F7150ADFC221CDBE3 /* Pods-AKAudioNoteBookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKAudioNoteBookTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AKAudioNoteBookTests/Pods-AKAudioNoteBookTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F5AD7595735E6DB59A8D3D4 /* libPods-AKAudioNoteBook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23EC8309B7748A02454602E /* libPods-AKAudioNoteBookTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +101,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F93C4944137F9E48F27CB9D0 /* libPods-AKAudioNoteBookUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4145AB0C1F6058AC004AADD9 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				4145AB0D1F6058C5004AADD9 /* AKTextView.h */,
+				4145AB0E1F6058C5004AADD9 /* AKTextView.m */,
+				4145AB101F6058E8004AADD9 /* AKTextViewController.h */,
+				4145AB111F6058E8004AADD9 /* AKTextViewController.m */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		4145AB131F6059A6004AADD9 /* Mix */ = {
+			isa = PBXGroup;
+			children = (
+				4145AB141F6059AD004AADD9 /* AKMixViewController.h */,
+				4145AB151F6059AD004AADD9 /* AKMixViewController.m */,
+			);
+			path = Mix;
+			sourceTree = "<group>";
+		};
 		415DDE641F6045FC00F43738 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +135,8 @@
 				415DDE8B1F6045FC00F43738 /* AKAudioNoteBookTests */,
 				415DDE961F6045FC00F43738 /* AKAudioNoteBookUITests */,
 				415DDE6E1F6045FC00F43738 /* Products */,
+				5A956CEAFBC78F013FDD57F0 /* Pods */,
+				84B3EB56BC3600ECFE76DBA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +153,10 @@
 		415DDE6F1F6045FC00F43738 /* AKAudioNoteBook */ = {
 			isa = PBXGroup;
 			children = (
+				4145AB131F6059A6004AADD9 /* Mix */,
+				4145AB0C1F6058AC004AADD9 /* File */,
+				415DDEA91F60510200F43738 /* Constant */,
+				415DDEA51F604AAB00F43738 /* Catalog */,
 				415DDE701F6045FC00F43738 /* AppDelegate.h */,
 				415DDE711F6045FC00F43738 /* AppDelegate.m */,
 				415DDE731F6045FC00F43738 /* ViewController.h */,
@@ -135,6 +189,46 @@
 			path = AKAudioNoteBookUITests;
 			sourceTree = "<group>";
 		};
+		415DDEA51F604AAB00F43738 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				415DDEA61F604AC700F43738 /* AKMainCategory.h */,
+				415DDEA71F604AC700F43738 /* AKMainCategory.m */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		415DDEA91F60510200F43738 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				415DDEAB1F60513E00F43738 /* AKBaseDefine.h */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		5A956CEAFBC78F013FDD57F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66D5B69FDEAAD1DF5F9F2D11 /* Pods-AKAudioNoteBook.debug.xcconfig */,
+				4B3C9D4A777F54D2A3251957 /* Pods-AKAudioNoteBook.release.xcconfig */,
+				437D5819F666D63682B0F602 /* Pods-AKAudioNoteBookTests.debug.xcconfig */,
+				E378CB7F7150ADFC221CDBE3 /* Pods-AKAudioNoteBookTests.release.xcconfig */,
+				15E510BD1A1C98D2AE898037 /* Pods-AKAudioNoteBookUITests.debug.xcconfig */,
+				7118FFC88055BAD1E429036A /* Pods-AKAudioNoteBookUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84B3EB56BC3600ECFE76DBA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1989D089CEBEA530EFF6DDE /* libPods-AKAudioNoteBook.a */,
+				051038B56CA0AA3444AF68EE /* libPods-AKAudioNoteBookTests.a */,
+				467093FB848837A40BE2D99D /* libPods-AKAudioNoteBookUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 415DDE9C1F6045FC00F43738 /* Build configuration list for PBXNativeTarget "AKAudioNoteBook" */;
 			buildPhases = (
+				34CF500C99D2673697AD2F72 /* [CP] Check Pods Manifest.lock */,
 				415DDE691F6045FC00F43738 /* Sources */,
 				415DDE6A1F6045FC00F43738 /* Frameworks */,
 				415DDE6B1F6045FC00F43738 /* Resources */,
+				93A7810D7653DDA6A2E6CCA2 /* [CP] Embed Pods Frameworks */,
+				6FFEEFB4382E989C40E621AD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,9 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 415DDE9F1F6045FC00F43738 /* Build configuration list for PBXNativeTarget "AKAudioNoteBookTests" */;
 			buildPhases = (
+				2856B45325E1A9BDC100EAC8 /* [CP] Check Pods Manifest.lock */,
 				415DDE841F6045FC00F43738 /* Sources */,
 				415DDE851F6045FC00F43738 /* Frameworks */,
 				415DDE861F6045FC00F43738 /* Resources */,
+				2FDE1B1D4127663266753BA1 /* [CP] Embed Pods Frameworks */,
+				FD9C60143448DF76B905A6EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,9 +277,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 415DDEA21F6045FC00F43738 /* Build configuration list for PBXNativeTarget "AKAudioNoteBookUITests" */;
 			buildPhases = (
+				56FE90E68839A559A5D142B4 /* [CP] Check Pods Manifest.lock */,
 				415DDE8F1F6045FC00F43738 /* Sources */,
 				415DDE901F6045FC00F43738 /* Frameworks */,
 				415DDE911F6045FC00F43738 /* Resources */,
+				FE35C1F18560D9CB00CDB9DF /* [CP] Embed Pods Frameworks */,
+				4311CD7F8DB1EA42F1D316FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,15 +366,157 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2856B45325E1A9BDC100EAC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2FDE1B1D4127663266753BA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AKAudioNoteBookTests/Pods-AKAudioNoteBookTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34CF500C99D2673697AD2F72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4311CD7F8DB1EA42F1D316FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AKAudioNoteBookUITests/Pods-AKAudioNoteBookUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56FE90E68839A559A5D142B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6FFEEFB4382E989C40E621AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AKAudioNoteBook/Pods-AKAudioNoteBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93A7810D7653DDA6A2E6CCA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AKAudioNoteBook/Pods-AKAudioNoteBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD9C60143448DF76B905A6EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AKAudioNoteBookTests/Pods-AKAudioNoteBookTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE35C1F18560D9CB00CDB9DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AKAudioNoteBookUITests/Pods-AKAudioNoteBookUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		415DDE691F6045FC00F43738 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				415DDE751F6045FC00F43738 /* ViewController.m in Sources */,
+				4145AB161F6059AD004AADD9 /* AKMixViewController.m in Sources */,
+				4145AB0F1F6058C5004AADD9 /* AKTextView.m in Sources */,
+				4145AB121F6058E8004AADD9 /* AKTextViewController.m in Sources */,
 				415DDE721F6045FC00F43738 /* AppDelegate.m in Sources */,
 				415DDE831F6045FC00F43738 /* main.m in Sources */,
 				415DDE7B1F6045FC00F43738 /* AKAudioNoteBook.xcdatamodeld in Sources */,
+				415DDEA81F604AC800F43738 /* AKMainCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,11 +677,13 @@
 		};
 		415DDE9D1F6045FC00F43738 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D5B69FDEAAD1DF5F9F2D11 /* Pods-AKAudioNoteBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2XBEJ6876;
 				INFOPLIST_FILE = AKAudioNoteBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.AKAudioNoteBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,11 +693,13 @@
 		};
 		415DDE9E1F6045FC00F43738 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B3C9D4A777F54D2A3251957 /* Pods-AKAudioNoteBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2XBEJ6876;
 				INFOPLIST_FILE = AKAudioNoteBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.AKAudioNoteBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -460,6 +709,7 @@
 		};
 		415DDEA01F6045FC00F43738 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 437D5819F666D63682B0F602 /* Pods-AKAudioNoteBookTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -475,6 +725,7 @@
 		};
 		415DDEA11F6045FC00F43738 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E378CB7F7150ADFC221CDBE3 /* Pods-AKAudioNoteBookTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -490,6 +741,7 @@
 		};
 		415DDEA31F6045FC00F43738 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15E510BD1A1C98D2AE898037 /* Pods-AKAudioNoteBookUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2XBEJ6876;
@@ -504,6 +756,7 @@
 		};
 		415DDEA41F6045FC00F43738 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7118FFC88055BAD1E429036A /* Pods-AKAudioNoteBookUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2XBEJ6876;

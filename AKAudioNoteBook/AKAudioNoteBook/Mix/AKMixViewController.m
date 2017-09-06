@@ -1,39 +1,37 @@
 //
-//  ViewController.m/Users/felix/AKAudioNoteBook/AKAudioNoteBook/AKAudioNoteBook/Catalog
+//  AKMixViewController.m
 //  AKAudioNoteBook
 //
-//  Created by Aka on 2017/9/6.
+//  Created by Aka on 2017/9/7.
 //  Copyright © 2017年 Aka. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "AKMainCategory.h"
 #import "AKMixViewController.h"
+#import "AKMainCategory.h"
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface AKMixViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 
-@property (nonatomic, strong) NSArray<AKMainCategory *> *datasources;
+@property (nonatomic, strong) NSArray *dataSources;
 
 @end
 
-// cell 最好是自己去自定义的
-static NSString *const reuseTableViewCellIdentifier = @"reuse.table.cell.identifier";
+static NSString *const reuseMixTableViewCellIdentifier = @"reuse.mix.table.cell.identifier";
 
-@implementation ViewController
+@implementation AKMixViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     [self comInit];
+    [self textInit];
 }
 
 - (void)comInit {
-    
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds)) style:UITableViewStylePlain];
     [self.view addSubview:_tableView];
-    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:reuseTableViewCellIdentifier];
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:reuseMixTableViewCellIdentifier];
     _tableView.dataSource  = self;
     _tableView.delegate = self;
     
@@ -43,30 +41,31 @@ static NSString *const reuseTableViewCellIdentifier = @"reuse.table.cell.identif
         // Fallback on earlier versions
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
-    
-    UIBarButtonItem *rightBarBtn = [[UIBarButtonItem alloc] initWithTitle:@"创建文件夹" style:UIBarButtonItemStylePlain target:self action:@selector(onCreateFolderClick)];
+
+    UIBarButtonItem *rightBarBtn = [[UIBarButtonItem alloc] initWithTitle:@"创建文件" style:UIBarButtonItemStylePlain target:self action:@selector(onCreateFileClick)];
     self.navigationController.navigationBar.topItem.rightBarButtonItem = rightBarBtn;
-    
-    
 }
 
-#pragma mark -- click
-- (void)onCreateFolderClick {
-//    test
-    [self.navigationController pushViewController:[AKMixViewController new] animated:YES];
+- (void)textInit {
+    self.title = @"文件(夹)混合";
 }
 
+#pragma mark -- custom  click methods
+
+- (void)onCreateFileClick {
+    
+}
 
 #pragma mark -- tableView datasource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _datasources.count;
+    return _dataSources.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseTableViewCellIdentifier forIndexPath:indexPath];
-    AKMainCategory *category = _datasources[indexPath.row];
-//    cell.selectionStyle = UITableViewCellStyleDefault;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseMixTableViewCellIdentifier forIndexPath:indexPath];
+    AKMainCategory *category = _dataSources[indexPath.row];
+    //    cell.selectionStyle = UITableViewCellStyleDefault;
     cell.textLabel.text = category.title;
     cell.detailTextLabel.text = category.description;
     cell.image = category.firstImg;
@@ -77,15 +76,8 @@ static NSString *const reuseTableViewCellIdentifier = @"reuse.table.cell.identif
     return 80.f;
 }
 
-#pragma mark --table delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"选择对应的内容：%@",indexPath);
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
 
 @end

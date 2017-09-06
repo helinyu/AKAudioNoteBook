@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'AKAudioNoteBook' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for AKAudioNoteBook
+   pod 'AKSpeech', '~> 0.0.3'
+   pod 'YYModel', '~> 1.0.4'
+   pod 'Masonry', '~> 1.0.2'
+   pod 'PureLayout', '~> 3.0.2'
+   pod 'FMDB', '~> 2.7.2'
+
+  target 'AKAudioNoteBookTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AKAudioNoteBookUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
