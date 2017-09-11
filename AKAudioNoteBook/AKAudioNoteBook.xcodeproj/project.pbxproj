@@ -20,6 +20,9 @@
 		415DDE8D1F6045FC00F43738 /* AKAudioNoteBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 415DDE8C1F6045FC00F43738 /* AKAudioNoteBookTests.m */; };
 		415DDE981F6045FC00F43738 /* AKAudioNoteBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 415DDE971F6045FC00F43738 /* AKAudioNoteBookUITests.m */; };
 		415DDEA81F604AC800F43738 /* AKMainCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 415DDEA71F604AC700F43738 /* AKMainCategory.m */; };
+		41B654F61F63C3380041B034 /* MSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F78F451F617A720077C1BE /* MSLog.m */; };
+		41B654FA1F63C3EC0041B034 /* AKDBMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B654F91F63C3EC0041B034 /* AKDBMgr.m */; };
+		41B654FD1F63C4130041B034 /* AKMgrService.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B654FC1F63C4130041B034 /* AKMgrService.m */; };
 		6F5AD7595735E6DB59A8D3D4 /* libPods-AKAudioNoteBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1989D089CEBEA530EFF6DDE /* libPods-AKAudioNoteBook.a */; };
 		E23EC8309B7748A02454602E /* libPods-AKAudioNoteBookTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 051038B56CA0AA3444AF68EE /* libPods-AKAudioNoteBookTests.a */; };
 		F93C4944137F9E48F27CB9D0 /* libPods-AKAudioNoteBookUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 467093FB848837A40BE2D99D /* libPods-AKAudioNoteBookUITests.a */; };
@@ -71,6 +74,13 @@
 		415DDEA61F604AC700F43738 /* AKMainCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKMainCategory.h; sourceTree = "<group>"; };
 		415DDEA71F604AC700F43738 /* AKMainCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKMainCategory.m; sourceTree = "<group>"; };
 		415DDEAB1F60513E00F43738 /* AKBaseDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKBaseDefine.h; sourceTree = "<group>"; };
+		41B654F81F63C3EC0041B034 /* AKDBMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKDBMgr.h; sourceTree = "<group>"; };
+		41B654F91F63C3EC0041B034 /* AKDBMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKDBMgr.m; sourceTree = "<group>"; };
+		41B654FB1F63C4130041B034 /* AKMgrService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKMgrService.h; sourceTree = "<group>"; };
+		41B654FC1F63C4130041B034 /* AKMgrService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKMgrService.m; sourceTree = "<group>"; };
+		41F78F451F617A720077C1BE /* MSLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSLog.m; sourceTree = "<group>"; };
+		41F78F461F617A720077C1BE /* MSLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSLog.h; sourceTree = "<group>"; };
+		41F78F481F617B480077C1BE /* AKAudioNoteBook.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKAudioNoteBook.pch; sourceTree = "<group>"; };
 		437D5819F666D63682B0F602 /* Pods-AKAudioNoteBookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKAudioNoteBookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AKAudioNoteBookTests/Pods-AKAudioNoteBookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		467093FB848837A40BE2D99D /* libPods-AKAudioNoteBookUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AKAudioNoteBookUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B3C9D4A777F54D2A3251957 /* Pods-AKAudioNoteBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKAudioNoteBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-AKAudioNoteBook/Pods-AKAudioNoteBook.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +163,11 @@
 		415DDE6F1F6045FC00F43738 /* AKAudioNoteBook */ = {
 			isa = PBXGroup;
 			children = (
+				41F78F481F617B480077C1BE /* AKAudioNoteBook.pch */,
+				41B654FB1F63C4130041B034 /* AKMgrService.h */,
+				41B654FC1F63C4130041B034 /* AKMgrService.m */,
+				41B654F71F63C3C70041B034 /* DB */,
+				41F78F441F617A610077C1BE /* Helper */,
 				4145AB131F6059A6004AADD9 /* Mix */,
 				4145AB0C1F6058AC004AADD9 /* File */,
 				415DDEA91F60510200F43738 /* Constant */,
@@ -204,6 +219,24 @@
 				415DDEAB1F60513E00F43738 /* AKBaseDefine.h */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		41B654F71F63C3C70041B034 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				41B654F81F63C3EC0041B034 /* AKDBMgr.h */,
+				41B654F91F63C3EC0041B034 /* AKDBMgr.m */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		41F78F441F617A610077C1BE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				41F78F461F617A720077C1BE /* MSLog.h */,
+				41F78F451F617A720077C1BE /* MSLog.m */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		5A956CEAFBC78F013FDD57F0 /* Pods */ = {
@@ -509,7 +542,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B654F61F63C3380041B034 /* MSLog.m in Sources */,
+				41B654FD1F63C4130041B034 /* AKMgrService.m in Sources */,
 				415DDE751F6045FC00F43738 /* ViewController.m in Sources */,
+				41B654FA1F63C3EC0041B034 /* AKDBMgr.m in Sources */,
 				4145AB161F6059AD004AADD9 /* AKMixViewController.m in Sources */,
 				4145AB0F1F6058C5004AADD9 /* AKTextView.m in Sources */,
 				4145AB121F6058E8004AADD9 /* AKTextViewController.m in Sources */,
@@ -682,6 +718,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2XBEJ6876;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/AKAudioNoteBook/AKAudioNoteBook.pch";
 				INFOPLIST_FILE = AKAudioNoteBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -698,6 +735,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2XBEJ6876;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/AKAudioNoteBook/AKAudioNoteBook.pch";
 				INFOPLIST_FILE = AKAudioNoteBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
